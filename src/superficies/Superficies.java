@@ -1,6 +1,7 @@
 package superficies;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  * Examen de MVC 3ª Avaliación
@@ -77,19 +78,40 @@ public class Superficies {
 
     }
 
-    public float area() {
-        float area;
-        switch (ar) {
-            case 1: "Cuadrado"
+    public static void realizarOperacion(int op) {
+
+        float resultado = 0;
+
+        float areaCuadrado = 0;
+        float lado = 0;
+        float altura = 0;
+        float areaRectangulo = 0;
+        float base = 0;
+        float areaTriangulo = 0;
+        float radio = 0;
+        float areaCirculo = 0;
+
+        switch (op) {
+
+            case 1:
+                resultado = (lado * lado);
                 break;
-            case 2: "Rectangulo"
-                    break;
-            case 3: "Triangulo"
-                    break;
-            case 4: "Circulo"
-                    break;
-                
+            case 2:
+                resultado = (base * altura);
+                break;
+            case 3:
+                resultado = ((base * altura) / 2);
+                break;
+            case 4:
+                resultado = (radio * radio);
+                break;
+            case 5:
+                System.exit(op);
+            default:
+                JOptionPane.showMessageDialog(null, "Introduzca una opcion valida");
+                break;
         }
+        return resultado;
 
     }
 }
