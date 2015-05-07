@@ -23,7 +23,6 @@ public class Superficies {
 
         //Constructores de la clase Modelo y Vista
         Modelo contenedor = new Modelo();
-        Vista vis = new Vista();
 
         String shapeType;
 
@@ -44,14 +43,14 @@ public class Superficies {
             float sideLength;
 
             //Preguntamos el lado del cuadrado
-            System.out.println("Cual es el area del cuadrado?");
+            System.out.println("Cual es el lado del cuadrado?");
             sideLength = sc.nextFloat();
             //Mandamos el lado a la clase Modelo
             contenedor.setSideLength(sideLength);
             squareArea = sideLength * sideLength;
             //Mandamos el area a la clase Modelo
             contenedor.setSquareArea(squareArea);
-            vis.imprimir(contenedor);
+            Vista.imprimir(contenedor);
 
         }
         if (shapeType.equals("Rectangulo")) {
@@ -71,10 +70,10 @@ public class Superficies {
             //Mandamos los datos a la clase Modelo
             rectangleArea = sideLength * sideHeight;
             contenedor.setRectangleArea(rectangleArea);
-            vis.imprimir(contenedor);
+            Vista.imprimir(contenedor);
 
         }
-        if (shapeType.equals("triangulo")) {
+        if (shapeType.equals("Triangulo")) {
             //add area calculations for triangle here
             float baseLength;
             float height;
@@ -90,7 +89,7 @@ public class Superficies {
             //Mandamos los datos a la clase Modelo
             triangleArea = (float) (0.5 * baseLength * height);
             contenedor.setTriangleArea(triangleArea);
-            vis.imprimir(contenedor);
+            Vista.imprimir(contenedor);
 
         }
         if (shapeType.equals("Circulo")) {
@@ -106,7 +105,7 @@ public class Superficies {
             //Mandamos los datos a la clase Modelo
             circleArea = (float) (3.14159265 * circleArea);
             contenedor.setCircleArea(circleArea);
-            vis.imprimir(contenedor);
+            Vista.imprimir(contenedor);
         }
 
     }
