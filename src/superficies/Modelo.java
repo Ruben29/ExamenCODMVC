@@ -6,13 +6,18 @@ package superficies;
  */
 public class Modelo {
 
+    private String shapeType;
+
     private float squareArea;
     private float sideLength;
+
     private float sideHeight;
     private float rectangleArea;
     private float baseLength;
+
     private float height;
     private float triangleArea;
+
     private float radius;
     private float circleArea;
 
@@ -20,7 +25,8 @@ public class Modelo {
 
     }
 
-    public Modelo(float squareArea, float sideLength, float sideHeight, float rectangleArea, float baseLength, float height, float triangleArea, float radius, float circleArea) {
+    public Modelo(String shapeType, float squareArea, float sideLength, float sideHeight, float rectangleArea, float baseLength, float height, float triangleArea, float radius, float circleArea) {
+        this.shapeType = shapeType;
         this.squareArea = squareArea;
         this.sideLength = sideLength;
         this.sideHeight = sideHeight;
@@ -30,6 +36,14 @@ public class Modelo {
         this.triangleArea = triangleArea;
         this.radius = radius;
         this.circleArea = circleArea;
+    }
+
+    public String getShapeType() {
+        return shapeType;
+    }
+
+    public void setShapeType(String shapeType) {
+        this.shapeType = shapeType;
     }
 
     public float getSquareArea() {
@@ -108,5 +122,4 @@ public class Modelo {
     public String toString() {
         return "Modelo{" + "squareArea=" + squareArea + ", sideLength=" + sideLength + ", sideHeight=" + sideHeight + ", rectangleArea=" + rectangleArea + ", baseLength=" + baseLength + ", height=" + height + ", triangleArea=" + triangleArea + ", radius=" + radius + ", circleArea=" + circleArea + '}';
     }
-
 }
