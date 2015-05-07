@@ -76,4 +76,20 @@ public class Superficies {
         }
 
     }
+
+    public float area() {
+        float area;
+        switch (ar) {
+            case 1: "Cuadrado"
+                break;
+            case 2: "Rectangulo"
+                    break;
+            case 3: "Triangulo"
+                    break;
+            case 4: "Circulo"
+                    break;
+                
+        }
+
+    }
 }

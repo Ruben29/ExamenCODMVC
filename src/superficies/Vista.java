@@ -6,4 +6,8 @@ package superficies;
  */
 public class Vista {
     
+    public static void introducir(){
+        
+    }
+    
 }
