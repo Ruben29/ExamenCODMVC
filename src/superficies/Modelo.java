@@ -6,91 +6,107 @@ package superficies;
  */
 public class Modelo {
 
-    float areaCuadrado;
-    float lado;
-    float altura;
-    float areaRectangulo;
-    float base;
-    float areaTriangulo;
-    float radio;
-    float areaCirculo;
+    private float squareArea;
+    private float sideLength;
+    private float sideHeight;
+    private float rectangleArea;
+    private float baseLength;
+    private float height;
+    private float triangleArea;
+    private float radius;
+    private float circleArea;
 
     public Modelo() {
+
     }
 
-    public Modelo(float areaCuadrado, float lado, float altura, float areaRectangulo, float base, float areaTriangulo, float radio, float areaCirculo) {
-        this.areaCuadrado = areaCuadrado;
-        this.lado = lado;
-        this.altura = altura;
-        this.areaRectangulo = areaRectangulo;
-        this.base = base;
-        this.areaTriangulo = areaTriangulo;
-        this.radio = radio;
-        this.areaCirculo = areaCirculo;
+    public Modelo(float squareArea, float sideLength, float sideHeight, float rectangleArea, float baseLength, float height, float triangleArea, float radius, float circleArea) {
+        this.squareArea = squareArea;
+        this.sideLength = sideLength;
+        this.sideHeight = sideHeight;
+        this.rectangleArea = rectangleArea;
+        this.baseLength = baseLength;
+        this.height = height;
+        this.triangleArea = triangleArea;
+        this.radius = radius;
+        this.circleArea = circleArea;
     }
 
-    public float getAreaCuadrado() {
-        return areaCuadrado;
+    public float getSquareArea() {
+        return squareArea;
     }
 
-    public void setAreaCuadrado(float areaCuadrado) {
-        this.areaCuadrado = areaCuadrado;
+    public void setSquareArea(float squareArea) {
+        this.squareArea = squareArea;
     }
 
-    public float getLado() {
-        return lado;
+    public float getSideLength() {
+        return sideLength;
     }
 
-    public void setLado(float lado) {
-        this.lado = lado;
+    public void setSideLength(float sideLength) {
+        this.sideLength = sideLength;
     }
 
-    public float getAltura() {
-        return altura;
+    public float getSideHeight() {
+        return sideHeight;
     }
 
-    public void setAltura(float altura) {
-        this.altura = altura;
+    public void setSideHeight(float sideHeight) {
+        this.sideHeight = sideHeight;
     }
 
-    public float getAreaRectangulo() {
-        return areaRectangulo;
+    public float getRectangleArea() {
+        return rectangleArea;
     }
 
-    public void setAreaRectangulo(float areaRectangulo) {
-        this.areaRectangulo = areaRectangulo;
+    public void setRectangleArea(float rectangleArea) {
+        this.rectangleArea = rectangleArea;
     }
 
-    public float getBase() {
-        return base;
+    public float getBaseLength() {
+        return baseLength;
     }
 
-    public void setBase(float base) {
-        this.base = base;
+    public void setBaseLength(float baseLength) {
+        this.baseLength = baseLength;
     }
 
-    public float getAreaTriangulo() {
-        return areaTriangulo;
+    public float getHeight() {
+        return height;
     }
 
-    public void setAreaTriangulo(float areaTriangulo) {
-        this.areaTriangulo = areaTriangulo;
+    public void setHeight(float height) {
+        this.height = height;
     }
 
-    public float getRadio() {
-        return radio;
+    public float getTriangleArea() {
+        return triangleArea;
     }
 
-    public void setRadio(float radio) {
-        this.radio = radio;
+    public void setTriangleArea(float triangleArea) {
+        this.triangleArea = triangleArea;
     }
 
-    public float getAreaCirculo() {
-        return areaCirculo;
+    public float getRadius() {
+        return radius;
     }
 
-    public void setAreaCirculo(float areaCirculo) {
-        this.areaCirculo = areaCirculo;
+    public void setRadius(float radius) {
+        this.radius = radius;
+    }
+
+    public float getCircleArea() {
+        return circleArea;
+    }
+
+    public void setCircleArea(float circleArea) {
+        this.circleArea = circleArea;
+    }
+
+    @Override
+    public String toString() {
+        return "Modelo{" + "squareArea=" + squareArea + ", sideLength=" + sideLength + ", sideHeight=" + sideHeight + ", rectangleArea=" + rectangleArea + ", baseLength=" + baseLength + ", height=" + height + ", triangleArea=" + triangleArea + ", radius=" + radius + ", circleArea=" + circleArea + '}';
     }
 
 }
