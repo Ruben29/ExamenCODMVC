@@ -7,19 +7,21 @@ package superficies;
  */
 public class Vista {
 
-    public void imprimir(Modelo mod) {
-        if (mod.getShapeType().equalsIgnoreCase("square")) {
-            System.out.println("El area de tu cuadrado es: " + mod.getSquareArea());
+    public void imprimir(Modelo contenedor) {
+        if (contenedor.getShapeType().equalsIgnoreCase("square")) {
+            System.out.println("El area de tu cuadrado es: " + contenedor.getSquareArea());
         }
-        if (mod.getShapeType().equalsIgnoreCase("rectangle")) {
-            System.out.println("El area de tu rectangulo es: " + mod.getRectangleArea());
+        if (contenedor.getShapeType().equalsIgnoreCase("rectangle")) {
+            System.out.println("El area de tu rectangulo es: " + contenedor.getRectangleArea());
         }
-        if (mod.getShapeType().equalsIgnoreCase("triangle")) {
-            System.out.println("El area de tu triangulo es: " + mod.getTriangleArea());
+        if (contenedor.getShapeType().equalsIgnoreCase("triangle")) {
+            System.out.println("El area de tu triangulo es: " + contenedor.getTriangleArea());
         }
-        if (mod.getShapeType().equalsIgnoreCase("circle")) {
-            System.out.println("El area de tu circulo es:" + mod.getCircleArea());
+        if (contenedor.getShapeType().equalsIgnoreCase("circle")) {
+            System.out.println("El area de tu circulo es:" + contenedor.getCircleArea());
         }
 
     }
 }
+
+//Terminada
